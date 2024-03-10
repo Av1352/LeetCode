@@ -4,7 +4,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        expected = sum(range(len(nums) + 1))
+        # for i in range(0, len(nums)+1):
+        #     if i not in nums:
+        #         return i
+
+        n = len(nums)
+        expected = (n*(n+1))/2
         actual = sum(nums)
 
         return expected - actual

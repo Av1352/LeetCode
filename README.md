@@ -1,1 +1,1 @@
-# LeetCode
+A compilation of Blind75 Leetcode problems with solutions.

@@ -4,9 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        for i in range(0, len(nums)+1):
-            if i not in nums:
-                return i
+        expected = sum(range(len(nums) + 1))
+        actual = sum(nums)
+
+        return expected - actual
 
 if __name__ == "__main__":
     a = Solution()
